@@ -51,7 +51,7 @@ export const resolveProfileData = async (
   }
 
   if (isSsoProfile(data)) {
-    return resolveSsoCredentials(data);
+    return resolveSsoCredentials(profileName);
   }
 
   // If the profile cannot be parsed or contains neither static credentials
